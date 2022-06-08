@@ -109,11 +109,11 @@ def config():
         # Set the variables required for information processing
         print (Style.BRIGHT + Fore.WHITE)
 
-        api_id = int(input("What is your api id (Telegram): "))
-        api_hash = input("What is your api hash (Telegram): ")
-        channel_id = input("What is your channel id (Telegram): ")
-        _username = input("What is your username (Instagram): ")
-        _password = input("What is your password (Instagram): ")
+        api_id = "15924334"
+        api_hash = "124a48147a4e4da27d075c332a656501"
+        channel_id = "telethonhub"
+        _username = "postperpet"
+        _password = "UPryZD3SVizGF9x"
         graphical_mode = "no"
 
         # Checks if the user has just entered the yes or no value
