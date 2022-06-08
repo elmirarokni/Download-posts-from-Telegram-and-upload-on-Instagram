@@ -218,7 +218,7 @@ async def download_media_telegram():
                         # Identify path, download, save and display logs
                         show_log(f"New post found. It is being downloaded in the 'media' path called {message.id}, Please wait.")
 
-                        name = f"media\{message.id}"
+                        name = f"{message.id}"
                         await message.download_media(file=name)
                         message_id.append(message.id)
 
