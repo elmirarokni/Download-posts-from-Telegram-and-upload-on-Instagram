@@ -210,7 +210,7 @@ def config():
         channel_id = input("What is your channel id (Telegram): ")
         _username = input("What is your username (Instagram): ")
         _password = input("What is your password (Instagram): ")
-        graphical_mode = input("[!] Do you want to see the browser window of all the steps (y/n)? ").lower()
+        graphical_mode = "no"
 
         # Checks if the user has just entered the yes or no value
         # Does the user want to see the graphical environment of the robot performance?
