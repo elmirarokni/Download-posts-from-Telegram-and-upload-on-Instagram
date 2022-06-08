@@ -169,7 +169,7 @@ def config():
 
 
         # Set special variables for use function upload_media_instagram
-        path_geckodriver = os.path.abspath("plugin\geckodriver.exe")
+        path_geckodriver = os.environ.get("CHROMEDRIVER_PATH")
         website_insta_addr = "https://www.instagram.com/"
 
         input_username = "input[name='username']"
