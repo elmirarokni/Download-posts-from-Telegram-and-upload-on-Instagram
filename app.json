@@ -1,0 +1,36 @@
+{
+    "name": "Download posts from Telegram and upload on Instagram",
+    "description": "This module receives Telegram channel posts that are sent after the robot starts working and uploads them to your Instagram account. ",
+    "repository": "https://github.com/elmirarokni/Download-posts-from-Telegram-and-upload-on-Instagram",
+    "env":{
+      "FIREFOX_BIN":{
+        "description" : "do not change it if you don't know what to do",
+        "value": "/app/vendor/firefox/firefox",
+        "required":true
+      },
+      "GECKODRIVER_PATH":{
+        "description" : "do not change it if you don't know what to do",
+        "value": "/app/vendor/geckodriver/geckodriver",
+        "required":true
+      },
+      "LD_LIBRARY_PATH":{
+        "description" : "do not change it if you don't know what to do",
+        "value": "/usr/local/lib:/usr/lib:/lib:/app/vendor",
+        "required":true
+      },
+      "PATH":{
+        "description" : "do not change it if you don't know what to do",
+        "value": "/usr/local/bin:/usr/bin:/bin:/app/vendor/",
+        "required":true
+      }
+    },
+    "stack": "heroku-20",
+    "buildpacks": [
+        {   
+            "url": "heroku/python"  
+        },
+        {
+          "url": "https://github.com/pyronlaboratory/heroku-integrated-firefox-geckodriver.git"
+        }
+      ]
+  }
