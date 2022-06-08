@@ -133,13 +133,14 @@ def config():
         message_id = []
 
         # Login, create and save Telegram session
-        proxy = ('167.235.78.197', 443, 'onJL08k6fUST38law_u2HNsaWIuYXJ2YW5jbG91ZC5jb20')
-        connection = TelethonFakeTLS.ConnectionTcpMTProxyFakeTLS
-        proxy = proxy
-        client = telethon.TelegramClient(
-            session='test', api_id=api_id, api_hash=api_hash,
-            connection=connection,
-            proxy=proxy)
+        client = TelegramClient(session, api_id, api_hash)
+        # proxy = ('167.235.78.197', 443, 'onJL08k6fUST38law_u2HNsaWIuYXJ2YW5jbG91ZC5jb20')
+        # connection = TelethonFakeTLS.ConnectionTcpMTProxyFakeTLS
+        # proxy = proxy
+        # client = telethon.TelegramClient(
+            # session='test', api_id=api_id, api_hash=api_hash,
+            # connection=connection,
+            # proxy=proxy)
 
         # Clear screen
         clear_screen()
