@@ -251,14 +251,15 @@ def login_to_instagram():
         global driver
 
         # Set some options for browser scraper
-        options_browser = Options()
-        options_browser.add_argument("--remote-debugging-port=9224")
-        options_browser.add_argument("--disable-gpu")
-        options_browser.add_argument("--no-sandbox")
-        options_browser.add_argument("--disable-crash-reporter")
-        options_browser.add_argument("--disable-extensions")
-        options_browser.add_argument("--disable-logging")
-        options_browser.add_argument("--log-level=3")
+        options = webdriver.FirefoxOptions()
+        options.log.level = "trace"
+        options.add_argument("-remote-debugging-port=9224")
+        options.add_argument("-disable-gpu")
+        options.add_argument("-no-sandbox")
+        options.add_argument("-disable-crash-reporter")
+        options.add_argument("-disable-extensions")
+        options.add_argument("-disable-logging")
+        options.add_argument("-log-level=3")
 
         # If selected by the user, the browser display window will not be displayed
         # Otherwise, if the user agrees, a browser window will open graphically and show the robot steps and process in an instant
