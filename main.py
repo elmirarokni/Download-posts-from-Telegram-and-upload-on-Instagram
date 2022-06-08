@@ -102,7 +102,7 @@ def config():
         button_accept_cookies = "//button[contains(text(), 'Allow essential and optional cookies')]"
 
         # session = os.path.abspath(r'test')
-        session = os.path.abspath(r'plugin\telegram-bot')
+        session = os.path.abspath(r'test')
 
         # Set the execution time of the program
         today_time = datetime.datetime.utcnow()
@@ -134,14 +134,14 @@ def config():
         message_id = []
 
         # Login, create and save Telegram session
-        client = TelegramClient(session, api_id, api_hash)
-        # proxy = ('167.235.78.197', 443, 'onJL08k6fUST38law_u2HNsaWIuYXJ2YW5jbG91ZC5jb20')
-        # connection = TelethonFakeTLS.ConnectionTcpMTProxyFakeTLS
-        # proxy = proxy
-        # client = telethon.TelegramClient(
-            # session='test', api_id=api_id, api_hash=api_hash,
-            # connection=connection,
-            # proxy=proxy)
+        # client = TelegramClient(session, api_id, api_hash)
+        proxy = ('167.235.78.197', 443, 'onJL08k6fUST38law_u2HNsaWIuYXJ2YW5jbG91ZC5jb20')
+        connection = TelethonFakeTLS.ConnectionTcpMTProxyFakeTLS
+        proxy = proxy
+        client = telethon.TelegramClient(
+            session='test', api_id=api_id, api_hash=api_hash,
+            connection=connection,
+            proxy=proxy)
 
         # Clear screen
         clear_screen()
