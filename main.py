@@ -348,6 +348,8 @@ def login_to_instagram():
 
         # Set some options for browser scraper
         options_browser = Options()
+        options_browser.add_argument("--remote-debugging-port=9224")
+        options_browser.add_argument("--disable-gpu")
         options_browser.add_argument("--no-sandbox")
         options_browser.add_argument("--disable-crash-reporter")
         options_browser.add_argument("--disable-extensions")
