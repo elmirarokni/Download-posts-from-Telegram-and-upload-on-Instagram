@@ -2,6 +2,7 @@
     "name": "Download posts from Telegram and upload on Instagram",
     "description": "This module receives Telegram channel posts that are sent after the robot starts working and uploads them to your Instagram account. ",
     "repository": "https://github.com/elmirarokni/Download-posts-from-Telegram-and-upload-on-Instagram",
+    "stack": "container",
     "env":{
       "FIREFOX_BIN":{
         "description" : "do not change it if you don't know what to do",
