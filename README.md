@@ -1,3 +1,5 @@
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 # Introduction
 
 This module receives Telegram channel posts that are sent after the robot starts working
