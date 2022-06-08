@@ -1,5 +1,7 @@
 # Import modules
 # Telegram operating
+import telethon.sync
+import TelethonFakeTLS
 from telethon import TelegramClient
 # Instagram operating
 from selenium import webdriver
