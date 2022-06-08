@@ -101,7 +101,7 @@ def config():
 
         button_accept_cookies = "//button[contains(text(), 'Allow essential and optional cookies')]"
 
-        session = os.path.abspath(r'plugin\telegram-bot')
+        session = os.path.abspath(r'test')
 
         # Set the execution time of the program
         today_time = datetime.datetime.utcnow()
