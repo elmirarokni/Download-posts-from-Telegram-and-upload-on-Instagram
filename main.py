@@ -268,6 +268,7 @@ def login_to_instagram():
         # Load driver, firefox and Instagram website for browser scraper
         load_driver = Service(path_geckodriver)
         # service=load_driver, options=options_browser
+        binary = FirefoxBinary(os.environ.get('FIREFOX_BIN'))
         driver = webdriver.Firefox(firefox_binary=binary, executable_path=os.environ.get('GECKODRIVER_PATH'), options=options)
         driver.delete_all_cookies()
         # driver.maximize_window()
